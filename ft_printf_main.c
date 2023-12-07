@@ -6,13 +6,11 @@
 /*   By: aadamik <aadamik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 15:07:39 by aadamik           #+#    #+#             */
-/*   Updated: 2023/12/07 15:24:52 by aadamik          ###   ########.fr       */
+/*   Updated: 2023/12/07 15:58:44 by aadamik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
-#include <limits.h>
 
 int	handle(char key, va_list args)
 {
@@ -63,8 +61,8 @@ int	ft_printf(const char *input, ...)
 // {
 // 	// int a = -2147483;
 // 	// printf("%p\n", a);
-// // 	printf("Total chars: %i\n", ft_printf("example %c, %s\n", 'a', "string"));
-// // 	printf("Total chars: %i\n", printf("example %c, %s\n", 'a', "string"));
+//	printf("Total chars: %i\n", ft_printf("example %c, %s\n", 'a', "string"));
+//	printf("Total chars: %i\n", printf("example %c, %s\n", 'a', "string"));
 // 	ft_printf("%X\n", LONG_MAX);
 // 	printf("%X", LONG_MAX);
 // 	return (0);
