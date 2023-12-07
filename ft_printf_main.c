@@ -6,7 +6,7 @@
 /*   By: aadamik <aadamik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 15:07:39 by aadamik           #+#    #+#             */
-/*   Updated: 2023/12/06 23:55:22 by aadamik          ###   ########.fr       */
+/*   Updated: 2023/12/07 15:24:52 by aadamik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,15 @@ int	handle(char key, va_list args)
 	if (key == 's')
 		return (write_string(va_arg(args, char *)));
 	if (key == 'p')
-		return (write_point(va_arg(args, long long)));
+		return (write_point(va_arg(args, long)));
 	if (key == 'i' || key == 'd')
 		return (write_num(va_arg(args, int), DEC));
 	if (key == 'u')
 		return (write_posnum(va_arg(args, unsigned int), DEC));
 	if (key == 'x')
-		return (write_num(va_arg(args, long long), HEX));
+		return (write_posnum(va_arg(args, unsigned int), HEX));
 	if (key == 'X')
-		return (write_num(va_arg(args, long long), HEXCAPS));
+		return (write_posnum(va_arg(args, unsigned int), HEXCAPS));
 	if (key == '%')
 		return (write(1, "%", 1));
 	return (0);
@@ -65,6 +65,7 @@ int	ft_printf(const char *input, ...)
 // 	// printf("%p\n", a);
 // // 	printf("Total chars: %i\n", ft_printf("example %c, %s\n", 'a', "string"));
 // // 	printf("Total chars: %i\n", printf("example %c, %s\n", 'a', "string"));
-// 	ft_printf("%p", LONG_MIN);
+// 	ft_printf("%X\n", LONG_MAX);
+// 	printf("%X", LONG_MAX);
 // 	return (0);
 // }

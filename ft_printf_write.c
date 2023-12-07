@@ -6,14 +6,14 @@
 /*   By: aadamik <aadamik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 23:01:16 by aadamik           #+#    #+#             */
-/*   Updated: 2023/12/06 23:56:45 by aadamik          ###   ########.fr       */
+/*   Updated: 2023/12/07 15:39:30 by aadamik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <limits.h>
 
-int	write_posnum(unsigned long long our_value, char *base_content)
+int	write_posnum(unsigned long our_value, char *base_content)
 {
 	unsigned long long	base;
 	int					num_printed;
@@ -50,11 +50,11 @@ int	write_string(char *string)
 	return (write(1, string, ft_strlen(string)));
 }
 
-int	write_point(long long pointer)
+int	write_point(long pointer)
 {
 	int	num_printed;
 
 	num_printed = 0;
 	num_printed += write(1, "0x", 2);
-	return (2 + write_num(pointer, HEX));
+	return (2 + write_posnum(pointer, HEX));
 }

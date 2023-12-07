@@ -6,7 +6,7 @@
 /*   By: aadamik <aadamik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 18:49:55 by aadamik           #+#    #+#             */
-/*   Updated: 2023/12/06 23:49:48 by aadamik          ###   ########.fr       */
+/*   Updated: 2023/12/07 15:39:27 by aadamik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@
 # define HEX "0123456789abcdef"
 # define HEXCAPS "0123456789ABCDEF"
 
-int	write_posnum(unsigned long long our_value, char *base_content);
+int	write_posnum(unsigned long our_value, char *base_content);
 int	write_num(long long our_value, char *base_content);
 int	write_char(char letter);
 int	write_string(char *string);
-int	write_point(long long pointer);
+int	write_point(long pointer);
 int	handle(char key, va_list args);
 int	ft_printf(const char *input, ...);
 
