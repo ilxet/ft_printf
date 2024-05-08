@@ -6,14 +6,14 @@
 /*   By: aadamik <aadamik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:03:12 by aadamik           #+#    #+#             */
-/*   Updated: 2023/11/27 23:52:22 by aadamik          ###   ########.fr       */
+/*   Updated: 2024/04/05 19:14:22 by aadamik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-int	get_words_count(char const *s, char delim)
+int	get_words_count(char *s, char delim)
 {
 	int	i;
 	int	count_chars;
@@ -39,7 +39,7 @@ int	get_words_count(char const *s, char delim)
 }
 
 char	*get_single_word(
-	char const *orig_str, int which_word_to_get, char delim)
+	char *orig_str, int which_word_to_get, char delim)
 {
 	int	i;
 	int	char_count;
@@ -69,7 +69,7 @@ char	*get_single_word(
 }
 
 char	**get_strings(
-	char const *original_string, int how_many_words, char delim, char **array)
+	char *original_string, int how_many_words, char delim, char **array)
 {
 	int	i;
 
@@ -92,7 +92,7 @@ char	**get_strings(
 	return (array);
 }
 
-char	**ft_split(char const *s, char c)
+char	**ft_split(char *s, char c)
 {
 	int		how_many_words;
 	char	**array_of_strings;

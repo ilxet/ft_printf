@@ -6,13 +6,13 @@
 /*   By: aadamik <aadamik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 00:46:32 by aadamik           #+#    #+#             */
-/*   Updated: 2023/11/21 21:51:16 by aadamik          ###   ########.fr       */
+/*   Updated: 2024/04/05 19:07:29 by aadamik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t	ft_strlen(char const *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 

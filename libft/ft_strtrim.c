@@ -6,7 +6,7 @@
 /*   By: aadamik <aadamik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 18:00:00 by aadamik           #+#    #+#             */
-/*   Updated: 2023/11/27 17:51:59 by aadamik          ###   ########.fr       */
+/*   Updated: 2024/04/05 19:19:12 by aadamik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include "libft.h"
 
-int	setins(char c, char const *set)
+int	setins(char c, char *set)
 {
 	int	i;
 
@@ -28,7 +28,7 @@ int	setins(char c, char const *set)
 	return (0);
 }
 
-int	find_front(char const *s1, char const *set)
+int	find_front(char *s1, char *set)
 {
 	int	front;
 
@@ -38,7 +38,7 @@ int	find_front(char const *s1, char const *set)
 	return (front);
 }
 
-int	find_back(char const *s1, char const *set, int len)
+int	find_back(char *s1, char *set, int len)
 {
 	int	back;
 	int	i;
@@ -53,7 +53,7 @@ int	find_back(char const *s1, char const *set, int len)
 	return (back);
 }
 
-char	*cpy_trimm_str(char const *s1, int front, int trimmedlen)
+char	*cpy_trimm_str(char *s1, int front, int trimmedlen)
 {
 	char	*strimmed;
 	int		i;
@@ -74,7 +74,7 @@ char	*cpy_trimm_str(char const *s1, int front, int trimmedlen)
 	return (strimmed);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char *s1, char *set)
 {
 	int		len;
 	int		front;

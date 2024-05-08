@@ -6,15 +6,15 @@
 /*   By: aadamik <aadamik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 23:05:59 by aadamik           #+#    #+#             */
-/*   Updated: 2023/11/17 00:22:50 by aadamik          ###   ########.fr       */
+/*   Updated: 2024/04/05 19:00:08 by aadamik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(int count, int size)
 {
-	size_t	i;
+	int	i;
 	void	*ptr;
 
 	ptr = malloc(count * size);

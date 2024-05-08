@@ -6,16 +6,16 @@
 /*   By: aadamik <aadamik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 14:10:55 by aadamik           #+#    #+#             */
-/*   Updated: 2023/11/24 00:44:41 by aadamik          ###   ########.fr       */
+/*   Updated: 2024/04/05 19:17:33 by aadamik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+int	ft_strlcat(char *dst, char *src, int dstsize)
 {
-	size_t	i;
-	size_t	j;
+	int	i;
+	int	j;
 
 	i = 0;
 	while (dst[i] != '\0' && i < dstsize)

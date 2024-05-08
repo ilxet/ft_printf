@@ -6,15 +6,15 @@
 /*   By: aadamik <aadamik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 16:39:24 by aadamik           #+#    #+#             */
-/*   Updated: 2023/11/24 02:16:56 by aadamik          ###   ########.fr       */
+/*   Updated: 2024/04/05 19:09:29 by aadamik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char *s, int start, int len)
 {
-	size_t	i;
+	int	i;
 	char	*ss;
 
 	if (s == NULL)
